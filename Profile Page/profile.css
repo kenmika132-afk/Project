@@ -1,0 +1,145 @@
+/*logo*/
+nav {
+  background-color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap:20px;
+  position: sticky;
+  top: 0;            
+    z-index: 1000;     
+
+}  
+
+.profile-picture {
+  width:300px;
+  height: 300px;
+  border-radius: 50%;
+  padding:5px;
+}
+
+nav a {
+  text-decoration: none;
+  color:white;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap:20px;
+  
+}
+nav a:hover {
+  color: #ffcc00;
+  transition: color 0.3s ease;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+/*body*/
+body{
+  background-color:black;
+   font-family: "Pixelify Sans", sans-serif;
+   font-size: 40px;
+}
+
+h1,h2,p{
+  color:white;
+}
+
+.pointDown {
+    animation: pointDown 1s infinite alternate;
+}
+
+@keyframes pointDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(16px);
+    }
+}
+/*About me*/
+#aboutme{
+  text-align: center;
+  font-size:50px;
+}
+.friend{
+ width:1000px;
+height: 1000PX;
+}
+.friend-img{
+  display: flex;
+  justify-content:flex-start;
+  padding:30px;
+  gap:20px;
+}
+/*SKILL*/
+.skill-box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+#skill{
+    text-align:center;
+    padding:40px;
+}
+
+
+
+.skill-grid{
+    display: grid;                     /* turn on grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;                         /* spacing between boxes */
+    margin-top: 20px;
+    
+}
+.skill-box{
+    text-align:center;
+    padding:20px;
+    border-radius:100px;
+    background-color:white;
+    animation: fadeSlide 1s ease infinite alternate;
+}
+  
+
+    /* Para lumabas isa-isa */
+.skill-box:nth-child(1) { animation-delay: 0.3s; }
+.skill-box:nth-child(2) { animation-delay: 0.6s; }
+.skill-box:nth-child(3) { animation-delay: 0.9s; }
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-text{
+  color:black;
+}
+.right-image{
+  display:flex;
+  justify-content:space-between;
+  font-size:50px;
+}
+#text{
+
+  text-align:center;
+  padding:20px;
+}
+/*Projects*/
+.Projects{
+  text-align:center;
+
+}
+.Projects a {
+  text-decoration: none;
+  color:white;
+}
+
